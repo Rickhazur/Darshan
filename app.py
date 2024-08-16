@@ -13,8 +13,8 @@ word = st.text_input("Enter a word:")
 if st.button("Get Definition"):
     if API_KEY:
         headers = {
-            "Authorization": f"Bearer {proj-5M0xU5muIVV_STrj6I9tHAYdwZZvyd748eNFL-2JmYBvumjWgR7IGxtVMiT3BlbkFJZ8o9CnbPlqDhoCOb7mnOy2iTKSM4_6oApVmO2GOs-OW0koqmLpFH7VGJoA}",
-            "Content-Type": "application/json"
+            "Authorization": f"Bearer {API_KEY}"
+            "Content-Type": "application/json"       
         }
         try:
             response = requests.post(
